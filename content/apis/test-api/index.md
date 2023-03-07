@@ -1,6 +1,6 @@
 ---
-title: Test Post
+title: Test Api
 date: 2021-09-30T10:08:37.721Z
 ---
 
-Here's a test post.
+Here's a test api.
