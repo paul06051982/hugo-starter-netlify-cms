@@ -22,7 +22,13 @@ collections:
               { label: "Product Name", name: "product_name1", widget: "string" },
               { label: "Price", name: "price1", widget: "string" },
               { label: "Discount Price", name: "discount_price1", widget: "string" },
-              { label: "Featured Image", name: "image1", widget: "image" },
+              { label: "Image", name: "image1", widget: "image" },
+            ],
+            [
+              { label: "Product Name", name: "product_name2", widget: "string" },
+              { label: "Price", name: "price2", widget: "string" },
+              { label: "Discount Price", name: "discount_price2", widget: "string" },
+              { label: "Image", name: "image2", widget: "image" },
             ],
         }      
   - name: "posts" # Used in routes, e.g., /admin/collections/post
