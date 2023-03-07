@@ -1,4 +1,4 @@
-title = "My New Hugo Sites"
+title = "My New Hugo Site"
 
 [menu]
   [[menu.main]]
@@ -12,3 +12,9 @@ title = "My New Hugo Sites"
     name = "About"
     url = "/about"
     weight = 20
+
+  [[menu.main]]
+    identifier = "apis"
+    name = "Apis"
+    url = "/apis"
+    weight = 30
