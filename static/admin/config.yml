@@ -19,8 +19,9 @@ collections:
           widget: "object",
           fields:
             [
-              { label: "Heading", name: "heading", widget: string },
-              { label: "Text", name: "text", widget: "text" },
+              { label: "Product Name", name: "product_name1", widget: "string" },
+              { label: "Price", name: "price1", widget: "string" },
+              { label: "Discount Price", name: "discount_price1", widget: "string" },
             ],
         }
       
