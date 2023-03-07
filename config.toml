@@ -17,4 +17,4 @@ title = "My New Hugo Site"
     identifier = "apis"
     name = "Apis"
     url = "/apis"
-    weight = 30
+    weight = 10
