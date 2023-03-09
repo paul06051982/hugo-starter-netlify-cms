@@ -7,7 +7,7 @@ collections:
   - name: "new_arrivals" # Used in routes, e.g., /admin/collections/post
     label: "New Arrivals" # Used in the UI
     folder: "content/new_arrivals" # The path to the folder where the documents are stored
-    path: "{{slug}}/index"
+    path: "index"
     media_folder: "" # Save images in the post's own folder instead of the static folder
     public_folder: ""
     create: true # Allow users to create new documents in this collection
