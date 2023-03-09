@@ -12,48 +12,17 @@ backend:
     public_folder: ""
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter    
+      - { label: "Publish Date", name: "date", widget: "datetime" },
       - {
           label: "New Arrivals",
           name: "new_arrivals",
           widget: "object",
           fields:
             [
-                {
-                  label: "Product 1",
-                  name: "product_1",
-                  widget: "object",
-                  fields:
-                    [
-                      { label: "Product Name", name: "product_name1", widget: "string" },
-                      { label: "Price", name: "price1", widget: "string" },
-                      { label: "Discount Price", name: "discount_price1", widget: "string" },
-                      { label: "Image", name: "image1", widget: "image" },
-                    ],
-                },
-                {
-                  label: "Product 2",
-                  name: "product_2",
-                  widget: "object",
-                  fields:
-                    [
-                      { label: "Product Name", name: "product_name2", widget: "string" },
-                      { label: "Price", name: "price2", widget: "string" },
-                      { label: "Discount Price", name: "discount_price2", widget: "string" },
-                      { label: "Image", name: "image2", widget: "image" },
-                    ],
-                },
-                {
-                  label: "Product 3",
-                  name: "product_3",
-                  widget: "object",
-                  fields:
-                    [
-                      { label: "Product Name", name: "product_name3", widget: "string" },
-                      { label: "Price", name: "price3", widget: "string" },
-                      { label: "Discount Price", name: "discount_price3", widget: "string" },
-                      { label: "Image", name: "image3", widget: "image" },
-                    ],
-                }
+              { label: "Product Name", name: "product_name1", widget: "string" },
+              { label: "Price", name: "price1", widget: "string" },
+              { label: "Discount Price", name: "discount_price1", widget: "string" },
+              { label: "Image", name: "image1", widget: "image" }
             ],
         }
   - name: "posts" # Used in routes, e.g., /admin/collections/post
