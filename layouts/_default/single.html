@@ -1,5 +1,24 @@
 single
-{{ .Params.product_1.product_name1 }}
+{{ range .Params }}
+	1
+{{ end }}
+
+{"new_arrival": [{
+		"product_1": {
+			"product_name1": "{{ .Params.product_1.product_name1 }}",
+			"price1": "{{ .Params.product_1.price1 }}",
+			"discount_price1": "{{ .Params.product_1.discount_price1 }}",
+			"image1": "{{ .Params.product_1.image1 }}"
+		}
+	}, {
+		"product_2": {
+			"product_name2": "Top Handle Handbag",
+			"price2": "$80",
+			"discount_price2": "$60",
+			"image2": "product-1.png"
+		}
+	}]
+}
 {{ partial "header.html" . }}
 
 <h1 class="post-title">{{ .Title }}</h1>
