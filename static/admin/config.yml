@@ -25,10 +25,10 @@ collections:
                   widget: "object",
                   fields:
                     [
-                      { label: "Product Name", name: "product_name1", widget: "string" },
-                      { label: "Price", name: "price1", widget: "string" },
-                      { label: "Discount Price", name: "discount_price1", widget: "string" },
-                      { label: "Image", name: "image1", widget: "image" },
+                      { label: "Product Name", name: "product_name", widget: "string" },
+                      { label: "Price", name: "price", widget: "string" },
+                      { label: "Discount Price", name: "discount_price", widget: "string" },
+                      { label: "Image", name: "image", widget: "image" },
                     ],
                 },
                 {
@@ -37,10 +37,10 @@ collections:
                   widget: "object",
                   fields:
                     [
-                      { label: "Product Name", name: "product_name2", widget: "string" },
-                      { label: "Price", name: "price2", widget: "string" },
-                      { label: "Discount Price", name: "discount_price2", widget: "string" },
-                      { label: "Image", name: "image2", widget: "image" },
+                      { label: "Product Name", name: "product_name", widget: "string" },
+                      { label: "Price", name: "price", widget: "string" },
+                      { label: "Discount Price", name: "discount_price", widget: "string" },
+                      { label: "Image", name: "image", widget: "image" },
                     ],
                 },
                 {
@@ -49,10 +49,10 @@ collections:
                   widget: "object",
                   fields:
                     [
-                      { label: "Product Name", name: "product_name3", widget: "string" },
-                      { label: "Price", name: "price3", widget: "string" },
-                      { label: "Discount Price", name: "discount_price3", widget: "string" },
-                      { label: "Image", name: "image3", widget: "image" },
+                      { label: "Product Name", name: "product_name", widget: "string" },
+                      { label: "Price", name: "price", widget: "string" },
+                      { label: "Discount Price", name: "discount_price", widget: "string" },
+                      { label: "Image", name: "image", widget: "image" },
                     ],
                 }
             ],
