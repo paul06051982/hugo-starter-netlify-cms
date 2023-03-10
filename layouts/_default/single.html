@@ -1,5 +1,5 @@
 single
-{{ range $elem_index, $elem_val := .Params.new_arrivals }}
+{{ range $elem_key, $elem_val := .Params.new_arrivals }}
 	{{ $elem_key }} -- {{ $elem_val }}
 {{ end }}
 
