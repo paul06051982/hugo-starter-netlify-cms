@@ -1,4 +1,5 @@
 {{ range $key, $val := .Params.new_arrivals }}
+	{{ if $key }} {{ $new_arrivals := $key."," }} {{ end }}
 {{ end }}
-{{ $new_arrivals := "as" }} 
-{"date": {{ .Params.date }}, "new_arrivals": {{ $new_arrivals }} }
+
+{"date": {{ .Params.date }}, "new_arrivals": [{{ $new_arrivals }}] }
