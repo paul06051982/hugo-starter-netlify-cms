@@ -1,6 +1,6 @@
 {{ $new_arrivals := "" }}
 {{ range $key, $val := .Params.new_arrivals }}
-	{{ if $key }} {{ $new_arrivals := "ddd" }} {{ end }}
+	{{ $new_arrivals := "ddd" }}
 {{ end }}
 
 {"date": {{ .Params.date }}, "new_arrivals": [{{ $new_arrivals }}] }
