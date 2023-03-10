@@ -1,1 +1,1 @@
-{{ .RawContent | jsonify }}
+{{ $page.RawContent | jsonify | safeJS }}
