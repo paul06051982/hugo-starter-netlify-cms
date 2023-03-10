@@ -1,4 +1,4 @@
-""
-<pre>
-{{ dict "date" .Params.date "new_arrivals" .Params.new_arrivals | jsonify | safeJS }}
-</pre>
+{{ range $key, $val := .Params.new_arrivals }}
+{{ end }}
+{{ $new_arrivals := [] }} 
+{"date": {{ .Params.date }}, "new_arrivals": {{ $new_arrivals }} }
