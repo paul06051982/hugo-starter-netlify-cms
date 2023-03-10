@@ -1,1 +1,1 @@
-{{ .RawContent | jsonify | safeJS }}
+{{ dict "date" .Params.date | jsonify | safeJS }}
