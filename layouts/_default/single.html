@@ -1,1 +1,1 @@
-{{ dict "date" .Params.date | jsonify | safeJS }}
+{{ dict "date" .Params.date "new_arrivals" .Params.new_arrivals | jsonify | safeJS }}
