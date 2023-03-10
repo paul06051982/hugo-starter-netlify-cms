@@ -1,6 +1,6 @@
 single
-{{ range .Params.product_1 }}
-	1
+{{ range $elem_index, $elem_val := .Params.new_arrivals }}
+	{{ $elem_key }} -- {{ $elem_val }}
 {{ end }}
 
 {"new_arrival": [{
