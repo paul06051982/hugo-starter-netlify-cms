@@ -1,5 +1,5 @@
 ---
-title: Hi Theresg
+title: hantu
 blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
