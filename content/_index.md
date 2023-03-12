@@ -1,5 +1,5 @@
 ---
-title: Hi Theres
+title: Hi Theresg
 blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
