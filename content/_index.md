@@ -1,5 +1,5 @@
 ---
-title: hantu
+title: hantus
 blurb: Welcome to your new Hugo site.
 section:
   heading: A Subsection
