@@ -1,5 +1,5 @@
 ---
-title: "Hi There"
+title: "Blink Shop || Home"
 blurb: "Welcome to your new Hugo site."
 section:
     heading: "A Subsection"

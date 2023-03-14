@@ -1,4 +1,7 @@
+baseURL = "/"
+languageCode = "en-us"
 title = "My New Hugo Site"
+relativeurls = true
 
 [menu]
   [[menu.main]]
@@ -18,3 +21,34 @@ title = "My New Hugo Site"
     name = "Apis"
     url = "/apis"
     weight = 30
+	
+[params]
+	custom_css = [
+"css/vendor/bootstrap.min.css",
+"css/vendor/font-awesome.css",
+"css/vendor/flaticon/flaticon.css",
+"css/vendor/slick.css",
+"css/vendor/slick-theme.css",
+"css/vendor/jquery-ui.min.css",
+"css/vendor/sal.css",
+"css/vendor/magnific-popup.css",
+"css/vendor/base.css",
+"css/style.min.css"
+]
+	custom_js = [
+"js/vendor/modernizr.min.js",
+"js/vendor/jquery.js",
+"js/vendor/popper.min.js",
+"js/vendor/bootstrap.min.js",
+"js/vendor/slick.min.js",
+"js/vendor/js.cookie.js",
+"js/vendor/jquery-ui.min.js",
+"js/vendor/jquery.countdown.min.js",
+"js/vendor/sal.js",
+"js/vendor/jquery.magnific-popup.min.js",
+"js/vendor/imagesloaded.pkgd.min.js",
+"js/vendor/isotope.pkgd.min.js",
+"js/vendor/counterup.js",
+"js/vendor/waypoints.min.js",
+"js/main.js"
+]
