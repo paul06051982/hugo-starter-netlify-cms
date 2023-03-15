@@ -1,7 +1,7 @@
     <!-- JS
 ============================================ -->
 	{{ range .Site.Params.custom_js }}
-	<script src="{{ . }}"></script>
+	<script src='{{ printf "%s" . | absURL }}'></script>
 	{{ end }}
 
 </body>

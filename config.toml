@@ -1,8 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-relativeurls = true
-
+title = "Blink Shop | Home"
 [menu]
   [[menu.main]]
     identifier = "posts"
