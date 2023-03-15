@@ -9,5 +9,8 @@
   <body>
     <!-- the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+	<script type="text/javascript">
+	  CMS.registerWidget('uuid', uuidWidget.UuidControl, uuidWidget.UuidPreview)
+	</script>
   </body>
 </html>
