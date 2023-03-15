@@ -1,3 +1,0 @@
----
-title: Blink Shop || Home
----
