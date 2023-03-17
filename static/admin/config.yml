@@ -18,12 +18,13 @@ collections:
     media_folder: "images" # Folder where user uploaded files should go
     create: true
     fields:
+      - { label: "Product ID", name: "productId", widget: "uuid"}
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
       - { label: "Meta Description", name: "metaDescription", widget: "string" }      
       - { label: "Product Price", name: "price", widget: "string" }      
       - { label: "Price Before", name: "priceBefore", widget: "string" }
       - { label: "Product Short Description", name: "productShortDescription", widget: "string" }
-      - { label: "Product ID", name: "productId", widget: "uuid"}
       - { label: "Type", name: "type", widget: "hidden", default: "Products"}
       - { label: "Product Images", name: "productImages", widget: "image"}
       
