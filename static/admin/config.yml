@@ -14,8 +14,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime"}
   - name: "product"
     label: "Product Page"
-    folder: "content/products"
     media_folder: "static/images/products" # Folder where user uploaded files should go
+    folder: "content/products"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
