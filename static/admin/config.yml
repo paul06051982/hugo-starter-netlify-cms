@@ -15,7 +15,9 @@ collections:
   - name: "product"
     label: "Product Page"
     folder: "content/products"
-    media_folder: "images" # Folder where user uploaded files should go
+    path: "{{slug}}/index"
+    media_folder: "" # Save images in the post's own folder instead of the static folder
+    public_folder: ""    
     create: true
     fields:
       - { label: "Product ID", name: "productId", widget: "uuid"}
@@ -25,6 +27,31 @@ collections:
       - { label: "Product Price", name: "price", widget: "string" }      
       - { label: "Price Before", name: "priceBefore", widget: "string" }
       - { label: "Product Short Description", name: "productShortDescription", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "Products"}
+      - {
+          label: "Colors",
+          name: "colors",
+          widget: "object",
+          fields:
+            [{ label: "Color 1", name: "color1", widget: "color", required: false },
+            { label: "Color 2", name: "color2", widget: "color", required: false },
+            { label: "Color 3", name: "color3", widget: "color", required: false }
+            ]
+        }
+      - {
+          label: "Sizes",
+          name: "sizes",
+          widget: "object",
+          fields:
+            [{ label: "Size 1", name: "size1", widget: "string", required: false },
+            { label: "Size 2", name: "size2", widget: "string", required: false },
+            { label: "Size 3", name: "size3", widget: "string", required: false },
+            { label: "Size 4", name: "size4", widget: "string", required: false },
+            { label: "Size 5", name: "size5", widget: "string", required: false },
+            { label: "Size 6", name: "size6", widget: "string", required: false }
+            ]
+        }
+      - { label: "Specifications", name: "specifications", widget: "string", required: false }
+      - { label: "Care & Maintenance", name: "careAndMaintenance", widget: "string", required: false }
       - { label: "Product Images", name: "productImages", widget: "image"}
+      - { label: "Type", name: "type", widget: "hidden", default: "Products"}
       
