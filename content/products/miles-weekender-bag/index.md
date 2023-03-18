@@ -1,6 +1,6 @@
 ---
-productId: ad57d86a-37a4-47bd-ba27-65d750a23e47
 title: Miles Weekender Bag
+productId: ad57d86a-37a4-47bd-ba27-65d750a23e47
 date: 2023-03-18T04:15:24.628Z
 metaDescription: meta description
 price: $155.00 - $255.00
@@ -25,11 +25,14 @@ sizes:
   size3: M
   size4: L
   size5: XL
+slug: miles-weekender-bag
 specifications: We’ve created a full-stack structure for our working workflow
   processes, were from the funny the century initial all the made, have spare to
   negatives. But the structure was from the funny the century rather, initial
   all the made, have spare to negatives.
 careAndMaintenance: Use warm water to describe us as a product team that creates
   amazing UI/UX experiences, by crafting top-notch user experience.
-type: Products
+types: Products
 ---
+
+Here's a test post.

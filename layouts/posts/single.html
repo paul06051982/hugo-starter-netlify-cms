@@ -9,11 +9,66 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="product-large-thumbnail-2 single-product-thumbnail axil-product slick-layout-wrapper--15 axil-slick-arrow arrow-both-side-3">
-										{{ range .Params.productImages }}
                                         <div class="thumbnail">
-											<img src="{{ . }}" alt="Product Images">
+                                            {{ $image := printf "%s" "images/product/product-big-10.png" | absURL | printf "%s" }}
+											<img src="{{ $image }}" alt="Product Images">
                                         </div>
-										{{ end }}
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-11.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-12.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-13.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-14.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-15.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                        <div class="thumbnail">
+                                            {{ $image := printf "%s" "images/product/product-big-12.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="Product Images">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="small-thumb-wrapper product-small-thumb-2 small-thumb-style-two small-thumb-style-three">
+                                        <div class="small-thumb-img ">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-10.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-11.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img active">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-12.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-13.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-14.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-15.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
+                                        <div class="small-thumb-img">
+                                            {{ $image := printf "%s" "images/product/product-thumb/thumb-12.png" | absURL | printf "%s" }} 
+											<img src="{{ $image }}" alt="samll-thumb">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -21,10 +76,24 @@
                         <div class="col-lg-6 mb--40">
                             <div class="single-product-content">
                                 <div class="inner">
-                                    <h2 class="product-title">{{ .Params.title }}</h2>
-                                    <span class="price-amount">{{ .Params.price }}</span>
+                                    <h2 class="product-title">Miles Weekender Bag</h2>
+                                    <span class="price-amount">$155.00 - $255.00</span>
+                                    <div class="product-rating">
+                                        <div class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="review-link">
+                                            <a href="#">(<span>2</span> customer reviews)</a>
+                                        </div>
+                                    </div>
                                     <ul class="product-meta">
                                         <li><i class="fal fa-check"></i>In stock</li>
+                                        <li><i class="fal fa-check"></i>Free delivery available</li>
+                                        <li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>
                                     </ul>
                                     <p class="description">In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, hendrerit in rutrum quis, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.</p>
 

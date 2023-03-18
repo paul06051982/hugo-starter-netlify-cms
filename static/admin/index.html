@@ -10,7 +10,20 @@
     <!-- the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 	<script src="https://unpkg.com/netlify-cms-widget-uuid-v4@^1.0.12/dist/index.js"></script>
-	<script type="text/javascript">
+	<script src="https://cdn.jsdelivr.net/npm/slugify@1.6.5/slugify.min.js"></script>	
+		<script type="text/javascript">
+		CMS.registerEventListener({
+	  name: 'preSave',
+	  handler: ({ entry }) => {
+		  // If there's already a slug, don't change it
+		if (entry.getIn(["data", "slug"], "")) return;
+
+		// Slugify the title and save it as the slug
+		const title = entry.getIn(["data", "title"], "");
+		const slug = slugify(title);
+		return entry.get("data").set("slug", slug);
+	  },
+	});
 	  CMS.registerWidget('uuid', uuidWidget.UuidControl, uuidWidget.UuidPreview)
 	</script>
   </body>

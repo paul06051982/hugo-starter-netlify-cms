@@ -27,6 +27,7 @@ collections:
       - { label: "Product Price", name: "price", widget: "string" }      
       - { label: "Price Before", name: "priceBefore", widget: "string" }
       - { label: "Product Short Description", name: "productShortDescription", widget: "string" }
+      - { label: "Stock", name: "stock", widget: "boolean", default: true}
       - {
           label: "Product Images",
           name: "productImages",
@@ -65,5 +66,5 @@ collections:
         }
       - { label: "Specifications", name: "specifications", widget: "string", required: false }
       - { label: "Care & Maintenance", name: "careAndMaintenance", widget: "string", required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "Products"}
+      - { label: "Types", name: "types", widget: "hidden", default: "Products"}
       
