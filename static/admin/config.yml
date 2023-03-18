@@ -28,6 +28,19 @@ collections:
       - { label: "Price Before", name: "priceBefore", widget: "string" }
       - { label: "Product Short Description", name: "productShortDescription", widget: "string" }
       - {
+          label: "Product Images",
+          name: "productImages",
+          widget: "object",
+          fields:
+            [{ label: "Product Image 1", name: "productImage1", widget: "image"},
+            { label: "Product Image 2", name: "productImage2", widget: "image", required: false},
+            { label: "Product Image 3", name: "productImage3", widget: "image", required: false},
+            { label: "Product Image 4", name: "productImage4", widget: "image", required: false},
+            { label: "Product Image 5", name: "productImage5", widget: "image", required: false},
+            { label: "Product Image 6", name: "productImage6", widget: "image", required: false}
+            ]
+        }
+      - {
           label: "Colors",
           name: "colors",
           widget: "object",
@@ -52,6 +65,5 @@ collections:
         }
       - { label: "Specifications", name: "specifications", widget: "string", required: false }
       - { label: "Care & Maintenance", name: "careAndMaintenance", widget: "string", required: false }
-      - { label: "Product Images", name: "productImages", widget: "image"}
       - { label: "Type", name: "type", widget: "hidden", default: "Products"}
       
