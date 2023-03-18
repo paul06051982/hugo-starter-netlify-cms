@@ -11,11 +11,12 @@ productImages:
   productImage4: product-big-13.png
   productImage5: product-big-14.png
   productImage6: product-big-15.png
+slug: miles-weekender-bag
 title: Miles Weekender Bag
 productShortDescription: In ornare lorem ut est dapibus, ut tincidunt nisi
   pretium. Integer ante est, hendrerit in rutrum quis, elementum eget magna.
   Pellentesque sagittis dictum libero, eu dignissim tellus.
-stock: true
+stock: false
 colors:
   color1: "#f90303"
   color2: "#a54242"
@@ -26,7 +27,6 @@ sizes:
   size3: M
   size4: L
   size5: XL
-slug: miles-weekender-bag
 specifications: We’ve created a full-stack structure for our working workflow
   processes, were from the funny the century initial all the made, have spare to
   negatives. But the structure was from the funny the century rather, initial
