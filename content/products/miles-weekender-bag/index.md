@@ -11,7 +11,6 @@ productImages:
   productImage4: product-big-13.png
   productImage5: product-big-14.png
   productImage6: product-big-15.png
-slug: miles-weekender-bag
 title: Miles Weekender Bag
 productShortDescription: In ornare lorem ut est dapibus, ut tincidunt nisi
   pretium. Integer ante est, hendrerit in rutrum quis, elementum eget magna.
