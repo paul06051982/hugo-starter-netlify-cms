@@ -71,3 +71,21 @@ img {
 .post-snippet h3 {
   margin-bottom: 0.25rem;
 }
+
+
+.single-product-content .inner .product-meta-out-of-stock {
+    margin-bottom: 20px;
+}
+.single-product-content .inner .product-meta-out-of-stock li {
+    color: var(--color-danger);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.single-product-content .inner .product-meta-out-of-stock li i {
+    padding-right: 15px;
+    font-size: 18px;
+}

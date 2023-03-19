@@ -64,6 +64,7 @@ collections:
             { label: "Size 6", name: "size6", widget: "string", required: false }
             ]
         }
+      - { label: "Best Sellers", name: "bestSellers", widget: "boolean", default: false}
       - { label: "Specifications", name: "specifications", widget: "string", required: false }
       - { label: "Care & Maintenance", name: "careAndMaintenance", widget: "string", required: false }
       - { label: "Types", name: "types", widget: "hidden", default: "Products"}

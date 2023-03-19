@@ -31,7 +31,7 @@ title = "Blink Shop | Home"
 "css/vendor/sal.css",
 "css/vendor/magnific-popup.css",
 "css/vendor/base.css",
-"css/style.min.css"
+"css/style.min.css",
 ]
 	custom_js = [
 "js/vendor/modernizr.min.js",

@@ -3,7 +3,7 @@ productId: 429b03ff-b24b-47fd-afe6-26d34ba816ba
 title: isengin akh
 date: 2023-03-18T07:12:17.873Z
 metaDescription: meta
-price: product
+price: 2
 priceBefore: price
 stock: true
 productImages:
