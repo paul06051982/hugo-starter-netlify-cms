@@ -1,7 +1,7 @@
 ---
 productId: e8ef14cd-49b6-4251-b779-cf15cdc31569
 title: Ella Everyday Tote
-date: 2023-03-19T05:32:06.523Z
+date: 2023-03-13T05:32:06.523Z
 metaDescription: meta description 1
 price: $155.00 - $255.00
 priceBefore: $300.00 - $400.00

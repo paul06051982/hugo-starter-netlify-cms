@@ -10,7 +10,8 @@
                         <h2 class="title">New Arrivals</h2>
                     </div>
                     <div class="new-arrivals-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
-						{{ range first 8 $p.Data.Pages.ByDate.Reverse }}
+						{{/* range first 8 $p.Data.Pages.ByDate.Reverse */}}
+						{{ range first 8 ( where $p.Data.Pages "Params.date" "ge" (now.AddDate 0 0 -7 )).ByDate.Reverse }}
                         <div class="slick-single-layout">
                             <div class="axil-product product-style-four">							
                                 <div class="thumbnail">
@@ -49,7 +50,7 @@
                 <div class="new-arrivals-product-activation-2 product-transparent-layout slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide product-slide-mobile">
 					{{/* range where $p.Data.Pages "Params.bestSellers" true }}
 					{{ range first 52 ( sort .Site.Data.petiteannonce "dateAdd" "desc" (where .Site.Data.petiteannonce "cityName" "eq" .Params.city )) */}}					
-					{{ range first 52 ( ( where $p.Data.Pages "Params.bestSellers" true ).ByDate.Reverse ) }}
+					{{ range first 52 ( where ( where $p.Data.Pages "Params.bestSellers" true ) "Params.date" "ge" (now.AddDate 0 0 -30 )).ByDate.Reverse }}
                     <div class="slick-single-layout">
                         <div class="axil-product product-style-seven">
                             <div class="product-content">
