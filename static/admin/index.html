@@ -20,7 +20,7 @@
 
 		// Slugify the title and save it as the slug
 		const title = entry.getIn(["data", "title"], "");
-		const slug = slugify(title);
+		const slug = slugify(title).toLowerCase();
 		return entry.get("data").set("slug", slug);
 	  },
 	});
