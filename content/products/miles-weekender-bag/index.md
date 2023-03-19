@@ -1,5 +1,6 @@
 ---
 productId: ad57d86a-37a4-47bd-ba27-65d750a23e47
+title: Miles Weekender Bag
 date: 2023-03-18T04:15:24.628Z
 metaDescription: meta description
 price: $155.00 - $255.00
@@ -12,7 +13,6 @@ productImages:
   productImage5: product-big-14.png
   productImage6: product-big-15.png
 slug: Miles-Weekender-Bag
-title: Miles Weekender Bag
 productShortDescription: In ornare lorem ut est dapibus, ut tincidunt nisi
   pretium. Integer ante est, hendrerit in rutrum quis, elementum eget magna.
   Pellentesque sagittis dictum libero, eu dignissim tellus.
@@ -27,6 +27,7 @@ sizes:
   size3: M
   size4: L
   size5: XL
+bestSellers: true
 specifications: We’ve created a full-stack structure for our working workflow
   processes, were from the funny the century initial all the made, have spare to
   negatives. But the structure was from the funny the century rather, initial
