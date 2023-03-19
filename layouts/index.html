@@ -10,11 +10,12 @@
                         <h2 class="title">New Arrivals</h2>
                     </div>
                     <div class="new-arrivals-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
-						{{ range $p.Data.Pages.ByDate.Reverse }}
+						{{ range first 8 $p.Data.Pages.ByDate.Reverse }}
                         <div class="slick-single-layout">
                             <div class="axil-product product-style-four">							
                                 <div class="thumbnail">
-                                    <a href="details">
+									{{ $href := printf "%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
+                                    <a href="{{ $href }}">
 										{{ $image := printf "%s" .Params.productImages.productImage1 | printf "%s%s" "/" | printf "%s%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
                                         <img data-sal="fade" data-sal-delay="100" data-sal-duration="1500" src="{{ $image }}" alt="Product Images">
                                     </a>
@@ -46,238 +47,30 @@
                     <h2 class="title">Best Sellers</h2>
                 </div>
                 <div class="new-arrivals-product-activation-2 product-transparent-layout slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide product-slide-mobile">
+					{{/* range where $p.Data.Pages "Params.bestSellers" true }}
+					{{ range first 52 ( sort .Site.Data.petiteannonce "dateAdd" "desc" (where .Site.Data.petiteannonce "cityName" "eq" .Params.city )) */}}					
+					{{ range first 52 ( ( where $p.Data.Pages "Params.bestSellers" true ).ByDate.Reverse ) }}
                     <div class="slick-single-layout">
                         <div class="axil-product product-style-seven">
                             <div class="product-content">
                                 <div class="inner">
-                                    <h5 class="title"><a href="details">Full Sleev Tshirt</a></h5>
+                                    <h5 class="title"><a href="details">{{ .Params.title }}</a></h5>
                                     <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(64)</span>
+                                        <span class="price current-price">{{ .Params.price }}</span>
+                                        <span class="price old-price">{{ .Params.priceBefore }}</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-16.png" | absURL | printf "%s" }}
+								{{ $href := printf "%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
+								<a href="{{ $href }}">
+									{{ $image := printf "%s" .Params.productImages.productImage1 | printf "%s%s" "/" | printf "%s%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
                                     <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Comfort Unisex Hoddie</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(44)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-17.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Stylish Hoddie</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(60)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-18.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Sky Blue T-shirt</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(22)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-19.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Modern Hoddie</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(64)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-20.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Blue T-shirt</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(14)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-21.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Men's Full Sleev T-shirt</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(64)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-22.png" | absURL | printf "%s" }}								
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-seven">
-                            <div class="product-content">
-                                <div class="inner">
-                                    <h5 class="title"><a href="details">Men's Half Sleev T-shirt</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$29.99</span>
-                                        <span class="price old-price">$49.99</span>
-                                    </div>
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(94)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="thumbnail">
-                                <a href="details">
-									{{ $image := printf "%s" "images/product/fashion/product-23.png" | absURL | printf "%s" }}
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="800" loading="lazy" src="{{ $image }}" alt="Product Images">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+					{{ end }}
                 </div>
             </div>
         </div>
@@ -293,11 +86,12 @@
                 <div class="explore-product-activation slick-layout-wrapper slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
                     <div class="slick-single-layout">
                         <div class="row row--15">
-						{{ range $p.Data.Pages.ByDate.Reverse }}						
+						{{ range first 8 $p.Data.Pages.ByDate.Reverse }}						
                             <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                                 <div class="axil-product product-style-one">
                                     <div class="thumbnail">
-                                        <a href="details">
+										{{ $href := printf "%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
+                                        <a href="{{ $href }}">
 											{{ $image := printf "%s" .Params.productImages.productImage1 | printf "%s%s" "/" | printf "%s%s" .Params.slug | printf "%s%s" "/" | printf "%s%s" "products" | absURL | printf "%s" }}
                                             <img data-sal="fade" data-sal-delay="100" data-sal-duration="1500" src="{{ $image }}" alt="Product Images">
                                         </a>
@@ -331,7 +125,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 text-center mt--20 mt_sm--0">
-                        <a href="product" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
+                        <a href="products" class="axil-btn btn-bg-lighter btn-load-more">View All Products</a>
                     </div>
                 </div>
 
